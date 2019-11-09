@@ -56,7 +56,8 @@ d3.json(
     bodySvg
       .append('g')
       .call(axisX)
-      .attr('id', 'x-axis');
+      .attr('id', 'x-axis')
+      .attr('transform', 'translate(0,' + height + ')');
     bodySvg
       .append('g')
       .call(axisY)
